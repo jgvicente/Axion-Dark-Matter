@@ -1,0 +1,36 @@
+background: class;  m = 1e-22 eV = 1.563738e+07 Mpc^-1;  m/H0 = 6.960e+10
+  shoot 0: A = 1.000000000000e+00  <a^3 rho>/target - 1 = +2.738e+03  (steps 53484, 4.5s)
+  shoot 1: A = 1.910645153305e-02  <a^3 rho>/target - 1 = -6.414e-01  (steps 39192, 7.7s)
+  shoot 2: A = 3.190697450957e-02  <a^3 rho>/target - 1 = +5.085e-04  (steps 40380, 11.0s)
+  shoot 3: A = 3.189886472019e-02  <a^3 rho>/target - 1 = -4.030e-07  (steps 40379, 14.2s)
+  shoot 4: A = 3.189887114736e-02  <a^3 rho>/target - 1 = +3.191e-10  (steps 40379, 17.5s)
+  shoot 5: A = 3.189887114227e-02  <a^3 rho>/target - 1 = -5.329e-14  (steps 40379, 20.8s)
+converged: tau_i = 5.000e-03, tau_end = 1.0279e+04, a_end = 5.4826e-05, steps = 40379, ~1636 oscillations
+Delta at m/H_* = 3: +4.349393e-01   (|Delta| (m/H_*) = 1.3048)
+check: <a^3rho> at m/H=10000 vs 20000: rel diff +2.03e-08  (expected O((H/m)^2))
+check: max |Delta(rtol=1e-9) - Delta(rtol=1e-11)| = 5.55e-07
+RD validation: max |phi - Bessel|/envelope (tau>1) = 7.30e-09;  late a^3rho num/exact - 1 = +9.46e-10
+RD validation: max |Delta_num - Delta_asympt|*(m/H_*) for m/H_*>=30: 3.912e-02
+envelope max |Delta|(m/H_*) on [3,10): full 1.7536   pure RD 1.7540
+envelope max |Delta|(m/H_*) on [10,30): full 1.6038   pure RD 1.6040
+envelope max |Delta|(m/H_*) on [30,100): full 1.5301   pure RD 1.5302
+envelope max |Delta|(m/H_*) on [100,300): full 1.5094   pure RD 1.5094
+envelope max |Delta|(m/H_*) on [300,1000): full 1.5023   pure RD 1.5023
+{
+ "params": {
+  "h": 0.6736,
+  "omega_b": 0.02237,
+  "omega_cdm": 0.12,
+  "T_cmb": 2.7255,
+  "N_ur": 2.0328,
+  "N_ncdm": 1,
+  "m_ncdm": 0.06
+ },
+ "args": {
+  "mass": 1e-22,
+  "mH_end": 20000.0,
+  "mHs_max": 1000.0,
+  "background": "auto",
+  "outdir": "/Users/jgvicente/Desktop/Research/Axions/Codes/matching_error/output"
+ }
+}
